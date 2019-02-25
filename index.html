@@ -21,7 +21,6 @@
    min-height: 60%;
    
     background-color: tan;
-   padding-bottom: 20vw;   /* Height of the footer */
 }
     #headerStyle{
          background-color: #263238;
@@ -202,12 +201,12 @@
       to {background-color: #2ac336; height: 5.625vw;  bottom: -104%;};
      } 
     @keyframes bulb {
-      from {background-color:#b71c1c};
+      from {background-color:#b71c1c;};
       to {background-color: #2ac336;};
     }
-        .StateTxt{
-            color: blue;
-            animation-name: changetext;
+    #StateTxt{
+      color: blue;
+      animation-name: changetext;
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-timing-function: ease-in-out;
@@ -220,18 +219,7 @@
       0%{color: blue;}
                 50%{color: #de2f2f;}
         100%{color: #3838d4;}
-    }
-    
-#footer {
-   position:relative;
-   bottom:0;
-   width:100%;
-   height: 20vw;   /* Height of the footer */
-   background:none;
-    text-align: center;
-    padding-bottom: 10.25vw;
-    background: tan;
-}  
+    }  
     }
        
     @media only screen and (min-width: 61.26em){
@@ -406,7 +394,7 @@
           background-color: #b71c1c;};
       to {background-color: #2ac336;};
     }
-        p5{
+        #StateTxt{
             color: blue;
             animation-name: changetext;
             animation-duration: 2s;
@@ -422,17 +410,6 @@
                 50%{color: #de2f2f;}
         100%{color: #3838d4;}
     }
-/*footer styling idea inspired by Nojoud on Codepen*/
-#footer {
-    padding: 0px;
-    position:relative;
-   bottom:0;
-   width:100%;
-   height: auto;
-   background:none;
-    text-align: center;
-    background-color: none;
-}
         }
 body{
       margin: 0;
@@ -466,39 +443,11 @@ body{
       </div>
         
     </div>
-    </div>
-   <div id="footer">
     <div id="text">
           <hr id="two">
-          <h1><em>Current Prom State: <p class="StateTxt">WE ALMOST HAVE ENOUGH</p></em></h1>
+          <h1><em>Current Prom State: <p id="StateTxt">WE ALMOST HAVE ENOUGH</p></em></h1>
           <hr id="one">
         </div>
     </div>
 </div>
-    
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function (){  
-    HeightTracker();
-    $(window).resize(function() {
-    HeightTracker();
-    }); 
-});  
-    
-
-function HeightTracker() { 
-var ContainerHeight = $('.container').height();
-var FooterHeight = $('#footer').height(); 
-    if (FooterHeight*3 > ContainerHeight){
-       $('.container').css({
-  '-webkit-transform' : 'scale(0.5)',
-  '-moz-transform'    : 'scale(0.5)',
-  '-ms-transform'     : 'scale(0.5)',
-  '-o-transform'      : 'scale(0.5)',
-  'transform'         : 'scale(0.5)',
-  'bottom'            : '30vw'
-}); 
-    } 
-}  
-</script>
 </html>
