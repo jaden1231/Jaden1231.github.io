@@ -201,7 +201,7 @@
       to {background-color: #2ac336; height: 5.625vw;  bottom: -104%;};
      } 
     @keyframes bulb {
-      from {background-color:#b71c1c;};
+      from {background-color: #b71c1c;};
       to {background-color: #2ac336;};
     }
     #StateTxt{
@@ -216,9 +216,13 @@
       -webkit-animation-timing-function: ease-in-out;
         }
     @keyframes changetext{
-      0%{color: blue;}
-                50%{color: #de2f2f;}
-        100%{color: #3838d4;}
+      0%{color: blue;
+        -webkit-color: blue;}
+                50%{color: #de2f2f;
+                    -webkit-color: #de2f2f;}
+        100%{color: #3838d4;
+        -webkit-color: #3838d4;
+            }
     }  
     }
        
@@ -406,9 +410,12 @@
             -webkit-animation-timing-function: ease-in-out;
         }
     @keyframes changetext{
-      0%{color: blue;}
-                50%{color: #de2f2f;}
-        100%{color: #3838d4;}
+      0%{color: blue;
+        -webkit-color: blue;}
+                50%{color: #de2f2f;
+         -webkit-color: #de2f2f;}
+        100%{color: #3838d4;
+        -webkit-color: #3838d4;}
     }
         }
 body{
