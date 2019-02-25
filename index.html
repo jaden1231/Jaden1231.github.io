@@ -135,9 +135,9 @@
     }
     #mercury{
       width: 4.35vw;
-      height: 10.625vw;
+      height: 50.625vw;
       position: relative;
-      bottom: -104%;
+      bottom: 48%;
       z-index: 20;
       left: -0.7375vw;
       background-color: #2ac336;
@@ -230,16 +230,8 @@
    background:none;
     text-align: center;
     padding-bottom: 10.25vw;
-    background: #263238;
-}
-#footer .footer-box{
-    width: 100%;
-    margin: auto;
-}
-#footer .footer-box p{
-    color: #fff;
-    font-size: 4vw;
-}    
+    background: tan;
+}  
     }
        
     @media only screen and (min-width: 61.26em){
@@ -351,9 +343,9 @@
     }
     #mercury{
       width: 20px;
-      height: 30px;
+      height: 160px;
       position: relative;
-      bottom: -57%;
+      bottom: 56%;
       z-index: 20;
       background-color: #2ac336;
       animation-name: mercury;
@@ -440,19 +432,6 @@
     text-align: center;
     background-color: none;
 }
-#footer .footer-box{
-    width: 100%;
-    margin: auto;
-    display: table;
-    background-color: #263238;
-    margin: 0;
-    height: 5vw;
-}
-#footer .footer-box p{
-    color: #fff;
-    font-size: 2vw;
-    margin-top: 1vw; 
-}
         }
 body{
       margin: 0;
@@ -466,10 +445,10 @@ body{
     <p>NNHS Prom Fund</p>
     </header>
     <div id="headerStyle2">
-    <p1>Churros Coming Soon! Also Dodgeball Tournament</p1>
+    <p1>Dogeball Tournament March 15th, bring friends!</p1>
     </div>
     <div id="headerStyle3">
-    <p2><em>-Location for Churros Sale Coming Soon</em></p2>
+    <p2><em>-Prom is May 18th, save the date</em></p2>
     </div>
    <div id="body">
     <div class="goal">
@@ -490,12 +469,9 @@ body{
    <div id="footer">
     <div id="text">
           <hr id="two">
-          <h1><em>Current Prom State: <p5>WE NEED MORE $</p5></em></h1>
+          <h1><em>Current Prom State: <p5>WE ALMOST HAVE ENOUGH</p5></em></h1>
           <hr id="one">
         </div>
-    <div class="footer-box">
-          <p>Powered by the Farquhar Bros</p>
-</div>
     </div>
 </div>
     
@@ -511,7 +487,7 @@ $(document).ready(function (){
 
 function HeightTracker() { 
 var ContainerHeight = $('.container').height();
-var FooterHeight = $('.footer-box').height(); 
+var FooterHeight = $('#footer').height(); 
     if (FooterHeight*3 > ContainerHeight){
        $('.container').css({
   '-webkit-transform' : 'scale(0.5)',
